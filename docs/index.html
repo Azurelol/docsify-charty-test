@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">  
+  <title>Docsify Charty Test</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta name="description" content="Description">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, shrink-to-fit=no, viewport-fit=cover">
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify/themes/vue.css" />
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/@markbattistella/docsify-charty@latest/dist/docsify-charty.min.css"/>  
+</head>
+
+<body>
+  <div id="app"></div>
+  <!-- Settings-->
+  <script>
+    window.$docsify = {
+      name: 'Docsify Charty Test',
+
+      loadNavbar: true,
+      homepage : 'index.md',
+      autoHeader: true,
+      loadSidebar: true,
+      subMaxLevel: 0,
+
+      tabs: {
+        persist    : true,      // default
+        sync       : true,      // default
+        theme      : 'classic', // default
+        tabComments: true,      // default
+        tabHeadings: true       // default
+      },
+
+      charty: {
+        "theme": "#EE5599",
+        "mode":  "dark",
+        "debug": true
+      },
+      
+      search: 'auto'
+    }
+  </script>
+  <script>mermaid.initialize(
+    { 
+      startOnLoad: true,
+      theme: 'base',
+      themeVariables: {
+          fontFamily : "verdana",
+          primaryColor: "#87BFFA",
+          mainBkg : "#D3E9FA",
+          textColor : "#0062AD"        
+      }
+    });</script>    
+
+  <!-- Docsify v4 -->
+  <script src="//cdn.jsdelivr.net/npm/docsify@4"></script>
+  <!-- Vue-->
+  <!-- Docsify Plugins -->  
+  <script src="//unpkg.com/@markbattistella/docsify-charty@latest"></script>
+  <script src="//unpkg.com/mermaid/dist/mermaid.js"></script>
+  <script src="//unpkg.com/docsify-edit-on-github/index.js"></script>
+  <script src="//unpkg.com/docsify-pagination/dist/docsify-pagination.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/docsify-tabs@1"></script>
+  <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/search.min.js"></script>
+  <script src="//unpkg.com/prismjs/components/prism-csharp.min.js"></script>
+  <script src="//unpkg.com/docsify-mermaid@latest/dist/docsify-mermaid.js"></script>
+  <script src="https://unpkg.com/docsify-plugin-flexible-alerts"></script>
+  <script src="//unpkg.com/docsify-glossary/dist/docsify-glossary.min.js"></script>
+  <script src="//unpkg.com/docsify-material-icons/dist/docsify-material-icons.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/docsify-copy-code"></script>  
+</body>
+
+</html>
