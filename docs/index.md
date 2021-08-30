@@ -1,5 +1,6 @@
 ### Charty
 
+```charty
 {
   "title":   "Bar chart",
   "caption": "With a caption",
@@ -14,3 +15,4 @@
     { "label": "2014", "value": [85, 217] }
   ]
 }
+```
